@@ -23,3 +23,9 @@ ng add @angular/material
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 ```
 
+
+## 组件
+
+* MatSidenavModule , 侧边栏组件
+* MatToolbarModule , 工具栏组件
+* MatIconModule ， 图标组件,更多图标见，[官方图标库](https://www.material.io/tools/icons/?style=baseline)
