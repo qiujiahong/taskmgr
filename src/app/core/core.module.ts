@@ -1,39 +1,33 @@
-import { NgModule , SkipSelf, Optional} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule, SkipSelf, Optional} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material';
+import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
+import {SidebarComponent} from './sidebar/sidebar.component';
 import {loadSvgResources} from '../svg.util';
-import { MatIconRegistry } from '@angular/material';
-import { DomSanitizer } from '@angular/platform-browser';
-
+import {MatIconRegistry} from '@angular/material';
+import {DomSanitizer} from '@angular/platform-browser';
+import {SharedModule} from '../shared/shared.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-SidebarComponent
-],
-imports: [
-  CommonModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  HttpClientModule
-],
+    SidebarComponent
+  ],
+  imports: [
+    HttpClientModule,
+    SharedModule,
+    BrowserAnimationsModule
+  ],
   exports: [
-  HeaderComponent,
-  FooterComponent,
-  SidebarComponent,
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  HttpClientModule
-]
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    HttpClientModule,
+    SharedModule
+  ]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parent: CommonModule,

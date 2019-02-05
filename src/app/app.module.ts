@@ -7,6 +7,9 @@ import {CoreModule} from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material';
 
+import {LoginModule} from './login/login.module';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +19,8 @@ import { MatSidenavModule} from '@angular/material';
     AppRoutingModule,
     CoreModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

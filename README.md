@@ -5,6 +5,7 @@
 * [常用命令](docs/commands.md)
 * [material安装](docs/material.md)
 * [material icon](docs/material_icon.md)
+* [material input](docs/material_input.md)
 
 * 动画
 * angular核心概念

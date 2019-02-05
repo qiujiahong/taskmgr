@@ -9,10 +9,6 @@ export class HeaderComponent implements OnInit {
 
   @Output() toggle = new EventEmitter<void>();
 
-  // constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-  //   iconRegistry.addSvgIcon('account', sanitizer.bypassSecurityTrustResourceUrl('assets/acount.svg'));
-  // }
-
   constructor() {
   }
 
