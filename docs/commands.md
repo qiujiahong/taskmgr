@@ -12,3 +12,11 @@
 * ng g c core/header -- 在core下面创建要给header的组件
 * ng g c core/header --spec=false -- 在core下面创建要给header的组件,不使用测试
 
+
+## 配置
+
+* ng config -g cli.packageManager yarn  -- 配置使用yarn 作为默认的包管理器
+* ng config -g cli.packageManager cnpm   -- 配置使用cnpm 作为默认的包管理器
+* ng config -g cli.packageManager npm   -- 配置使用cnpm 作为默认的包管理器
+
+
