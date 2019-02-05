@@ -1,17 +1,17 @@
-<div class="site">
-
-  <header>
-    <app-header></app-header>
-  </header>
-  <main>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <app-sidebar>
+    </app-sidebar>
+  </mat-sidenav>
+  <div class="site">
+    <header>
+      <app-header></app-header>
+    </header>
+    <main>
+      <button (click)="sidenav.open()">显示</button>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</mat-sidenav-container>
