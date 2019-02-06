@@ -9,6 +9,7 @@
 * [material list](docs/material_list.md)
 * [material主题](docs/material_theme.md)
 * [material对话框](docs/material_dialog.md)
+* [material menu](docs/material_menu.md)
 
 
 * [date](docs/date.md)
