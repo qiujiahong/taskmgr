@@ -21,3 +21,4 @@ export class NewProjectComponent implements OnInit {
     this.dialogRef.close('save and close');
   }
 }
+
