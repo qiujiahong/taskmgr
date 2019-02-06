@@ -7,6 +7,8 @@
 * [material icon](docs/material_icon.md)
 * [material input](docs/material_input.md)
 * [material list](docs/material_list.md)
+* [material主题](docs/material_theme.md)
+
 * [date](docs/date.md)
 * 动画
 * angular核心概念
