@@ -4,7 +4,10 @@ import {
   MatCardModule,
   MatToolbarModule,
   MatIconModule,
-  MatButtonModule, MatInputModule, MatFormFieldModule
+  MatButtonModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatListModule
 } from '@angular/material';
 
 
@@ -17,7 +20,8 @@ import {
     MatIconModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatListModule,
   ],
   exports: [
     CommonModule,
@@ -26,7 +30,8 @@ import {
     MatIconModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatListModule,
   ]
 })
 export class SharedModule {
