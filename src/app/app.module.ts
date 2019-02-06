@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material';
 
 import {LoginModule} from './login/login.module';
+import {ProjectModule} from './project/project.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {LoginModule} from './login/login.module';
     CoreModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    LoginModule
+    LoginModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

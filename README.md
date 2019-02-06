@@ -8,6 +8,8 @@
 * [material input](docs/material_input.md)
 * [material list](docs/material_list.md)
 * [material主题](docs/material_theme.md)
+* [material对话框](docs/material_dialog.md)
+
 
 * [date](docs/date.md)
 * 动画
