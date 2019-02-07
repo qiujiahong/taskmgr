@@ -9,6 +9,7 @@ import { MatSidenavModule} from '@angular/material';
 
 import {LoginModule} from './login/login.module';
 import {ProjectModule} from './project/project.module';
+import {TaskModule} from './task/task.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {ProjectModule} from './project/project.module';
     BrowserAnimationsModule,
     MatSidenavModule,
     LoginModule,
-    ProjectModule
+    ProjectModule,
+    TaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

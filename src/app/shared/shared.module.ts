@@ -7,7 +7,7 @@ import {
   MatButtonModule,
   MatInputModule,
   MatFormFieldModule,
-  MatListModule, MatSlideToggleModule, MatGridListModule, MatDialogModule, MatAutocompleteModule
+  MatListModule, MatSlideToggleModule, MatGridListModule, MatDialogModule, MatAutocompleteModule, MatMenuModule
 } from '@angular/material';
 
 // import {MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -26,7 +26,8 @@ import {
     MatSlideToggleModule,
     MatGridListModule,
     MatDialogModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatMenuModule
   ],
   exports: [
     CommonModule,
@@ -40,7 +41,8 @@ import {
     MatSlideToggleModule,
     MatGridListModule,
     MatDialogModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatMenuModule
   ]
 })
 export class SharedModule {

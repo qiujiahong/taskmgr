@@ -1,0 +1,32 @@
+<div mat-subheader class="header-container">
+  <div>
+    <h3>{{header}}</h3>
+  </div>
+  <div class="fill">
+    <button mat-button>
+      <mat-icon>add_circle_outline</mat-icon>
+      <span>新任务</span>
+    </button>
+  </div>
+  <div>
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+</div>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>mode_edit</mat-icon>
+    <span>修改列表名称</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon [svgIcon]="'move'"></mat-icon>
+    <span>移动本列表所有内容</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>delete_forever</mat-icon>
+    <span>删除列表</span>
+  </button>
+
+</mat-menu>

@@ -2,6 +2,7 @@
 
 
 * [环境搭建](docs/install.md)
+* [命名规则](docs/roules.md)
 * [常用命令](docs/commands.md)
 * [material安装](docs/material.md)
 * [material icon](docs/material_icon.md)

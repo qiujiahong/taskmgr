@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ProjectListComponent} from './project-list/project-list.component';
+import {TaskHomeComponent} from './task-home/task-home.component';
 
 const routes: Routes = [
-  {path: 'projects', component: ProjectListComponent},
+  {path: 'tasklists', component: TaskHomeComponent},
 ];
 
 @NgModule({
@@ -15,5 +15,5 @@ const routes: Routes = [
   ]
 })
 
-export class ProjectRoutingModule{
+export class TaskRoutingModule {
 }
