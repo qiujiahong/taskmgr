@@ -16,6 +16,7 @@
 
 .list-container{
   // 定义每个列表的宽度是360，y可以 滚钉
+  margin-left: 5px;
   flex: 0 0 360px;
   overflow-x: hidden;
   overflow-y: scroll;
