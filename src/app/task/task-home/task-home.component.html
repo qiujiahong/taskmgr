@@ -3,8 +3,10 @@
     class="list-container"
     *ngFor="let list of lists">
     <app-task-header
+      [header]="list.name"
       (newTask)="launchNewTaskDialog()"
-      [header]="list.name" ></app-task-header>
+      (moveAll)="lanchCopyTaskDiaglog()">
+    </app-task-header>
     <app-task-item *ngFor="let task of list.tasks"
       [item]="task">
 

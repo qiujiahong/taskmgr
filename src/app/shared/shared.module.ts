@@ -14,7 +14,7 @@ import {
   MatAutocompleteModule,
   MatMenuModule,
   MatCheckboxModule,
-  MatTooltipModule, MatRadioModule, MatDatepickerModule, MatNativeDateModule
+  MatTooltipModule, MatRadioModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule
 } from '@angular/material';
 
 // import {MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -39,7 +39,8 @@ import {
     MatTooltipModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSelectModule
   ],
   exports: [
     CommonModule,
@@ -59,7 +60,8 @@ import {
     MatTooltipModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSelectModule
   ]
 })
 export class SharedModule {
