@@ -6,6 +6,5 @@
 
 * 接收数据: constructor(@Inject(MD_DIALOG_DATA) public data: any){}  ,``在diaglog的构造函数传入``
 
-
-
+* 弹出对话框需要在模块中entryComponents中声明。
 
