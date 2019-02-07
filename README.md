@@ -11,6 +11,8 @@
 * [material主题](docs/material_theme.md)
 * [material对话框](docs/material_dialog.md)
 * [material menu](docs/material_menu.md)
+* [material Datepicker](docs/material_date_picker.md)
+
 
 
 * [date](docs/date.md)
