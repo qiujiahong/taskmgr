@@ -16,7 +16,7 @@
 </div>
 
 <mat-menu #appMenu="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onEditListClick()">
     <mat-icon>mode_edit</mat-icon>
     <span>修改列表名称</span>
   </button>

@@ -6,7 +6,8 @@
       [header]="list.name"
       (newTask)="launchNewTaskDialog()"
       (moveAll)="lanchCopyTaskDialog()"
-      (delList)="lanchConfirmDelTaskDialog()">
+      (delList)="lanchConfirmDelTaskDialog()"
+       (editList) = "lanchEditListDialog()">
     </app-task-header>
     <app-task-item *ngFor="let task of list.tasks"
       [item]="task"
@@ -16,6 +17,6 @@
   </app-task-list>
 </div>
 
-<button class="fab-buttom" mat-fab type="button" (click)="openNewProjectDialog()">
+<button class="fab-buttom" mat-fab type="button" (click)="launchNewListDialog()">
   <mat-icon>add</mat-icon>
 </button>
