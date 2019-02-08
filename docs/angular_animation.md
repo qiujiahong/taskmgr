@@ -60,7 +60,7 @@ export class AppComponent {
 
 
 
-## 补充说明
+## 动画效果
 
 * 常用的动画效果有，匀速变化、cubic-bezier、和关键帧（keyframe）
 * cubic-bezier 有如下2个网站能够帮我们实现，如``animate('0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95)')``
@@ -77,3 +77,14 @@ animate(5s, keyframes([
   style({transform: 'translateY(0%)'}),
 ]))
 ```
+
+## group动画
+
+group动画是指同时进行一组元素的动画。
+
+
+## Query & Stagger 
+
+* Query用于父亲节点寻找子节点，然后把动画应用到选择的元素；
+* Stagger指有多个满足Querry的元素，每个元素之间有间隔。
+
