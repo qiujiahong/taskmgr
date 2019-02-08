@@ -78,6 +78,28 @@ animate(5s, keyframes([
 ]))
 ```
 
+## 基本用法
+
+```typescript
+import {trigger, state, transition, style, animate , group} from '@angular/animations';
+
+export const slideToRight = trigger('routeAnim', [
+  // 没状态，一开始不存在
+  state('void', style ( {  'position': 'fixed', 'width': '100%', 'height': '80%' })),
+  state('*', style ( {  'position': 'fixed', 'width': '100%', 'height': '80%' })),
+  transition('void => *', [
+    style({transform: 'translateX(-100%)', opacity: 0}),
+    animate('0.5s ease-in-out', style({transform: 'translateX(0%)'}))
+  ]),
+  transition('* => void', [
+    style({transform: 'translateX(0%)', opacity: 1}),
+    animate('0.5s ease-in-out', style({transform: 'translateX(100%)'}))
+  ]),
+  transition('out => in', animate('100ms ease-out'))
+])
+
+```
+
 ## group动画
 
 group动画是指同时进行一组元素的动画。
