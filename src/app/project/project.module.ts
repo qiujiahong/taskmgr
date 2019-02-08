@@ -20,8 +20,7 @@ import {ConfirmDialogComponent} from '../shared/confirm-dialog/confirm-dialog.co
   ],
   entryComponents: [
     NewProjectComponent,
-    InviteComponent,
-    ConfirmDialogComponent
+    InviteComponent
   ]
 })
 export class ProjectModule { }

@@ -5,7 +5,8 @@
     <app-task-header
       [header]="list.name"
       (newTask)="launchNewTaskDialog()"
-      (moveAll)="lanchCopyTaskDiaglog()">
+      (moveAll)="lanchCopyTaskDialog()"
+      (delList)="lanchConfirmDelTaskDialog()">
     </app-task-header>
     <app-task-item *ngFor="let task of list.tasks"
       [item]="task"

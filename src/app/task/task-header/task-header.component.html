@@ -24,7 +24,7 @@
     <mat-icon [svgIcon]="'move'" class="material-icon"></mat-icon>
     <span>移动本列表所有内容</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onDelListClick()">
     <mat-icon>delete_forever</mat-icon>
     <span>删除列表</span>
   </button>
