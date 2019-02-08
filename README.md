@@ -12,6 +12,7 @@
 * [material对话框](docs/material_dialog.md)
 * [material menu](docs/material_menu.md)
 * [material Datepicker](docs/material_date_picker.md)
+* [angular动画](docs/angular_animation.md)
 
 
 
