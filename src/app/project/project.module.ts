@@ -5,6 +5,7 @@ import { NewProjectComponent } from './new-project/new-project.component';
 import { InviteComponent } from './invite/invite.component';
 import {ProjectRoutingModule} from './project-routing.module';
 import {SharedModule} from '../shared/shared.module';
+import {ConfirmDialogComponent} from '../shared/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {SharedModule} from '../shared/shared.module';
   ],
   entryComponents: [
     NewProjectComponent,
-    InviteComponent
+    InviteComponent,
+    ConfirmDialogComponent
   ]
 })
 export class ProjectModule { }
