@@ -1,4 +1,5 @@
 <mat-list-item class="container"
+               [@item]="widerPriority"
                [ngClass]="{
     'priority-normal': item.priority === 3 ,
     'priority-import': item.priority === 2 ,
