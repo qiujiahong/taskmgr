@@ -19,6 +19,5 @@ export const slideToRight = trigger('routeAnim', [
       animate('0.3s ease-in', style({opacity: 0}))
     ])
     // animate('0.5s ease-in-out', style({transform: 'translateX(100%)'}))
-  ]),
-  transition('out => in', animate('100ms ease-out'))
+  ])
 ])

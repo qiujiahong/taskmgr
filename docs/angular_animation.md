@@ -100,13 +100,74 @@ export const slideToRight = trigger('routeAnim', [
 
 ```
 
+
 ## group动画
 
 group动画是指同时进行一组元素的动画。
+
+```typescript
+import {trigger, state, transition, style, animate , group} from '@angular/animations';
+
+export const slideToRight = trigger('routeAnim', [
+  // 没状态，一开始不存在
+  state('void', style ( {  'position': 'fixed', 'width': '100%', 'height': '80%' })),
+  state('*', style ( {  'position': 'fixed', 'width': '100%', 'height': '80%' })),
+  transition('void => *', [
+    style({transform: 'translateX(-100%)', opacity: 0}),
+    group([
+      animate('0.5s ease-in-out', style({transform: 'translateX(0%)'})),
+      animate('0.3s ease-in', style({opacity: 1}))
+    ])
+    // animate('0.5s ease-in-out', style({transform: 'translateX(0%)'}))
+  ]),
+  transition('* => void', [
+    style({transform: 'translateX(0%)', opacity: 1}),
+    group([
+      animate('0.5s ease-in-out', style({transform: 'translateX(100%)'})),
+      animate('0.3s ease-in', style({opacity: 0}))
+    ])
+    // animate('0.5s ease-in-out', style({transform: 'translateX(100%)'}))
+  ])
+])
+
+```
 
 
 ## Query & Stagger 
 
 * Query用于父亲节点寻找子节点，然后把动画应用到选择的元素；
+
+```typescript
+import {trigger, stagger , state, transition, style, animate , group, query} from '@angular/animations';
+
+export const listAnimation = trigger('listAnim', [
+  transition('* => *', [
+    query(':enter', style({ opacity: 0}),  {optional: true }),
+    query(':enter', animate('1s', style({ opacity: 1})),  {optional: true }),
+    query(':leave', style({ opacity: 1}),  {optional: true }),
+    query(':leave', animate('1s', style({ opacity: 0})),  {optional: true })
+  ])
+])
+
+```
+
 * Stagger指有多个满足Querry的元素，每个元素之间有间隔。
+
+```typescript
+import {trigger, stagger , state, transition, style, animate , group, query} from '@angular/animations';
+
+export const listAnimation = trigger('listAnim', [
+  transition('* => *', [
+    query(':enter', style({ opacity: 0}),  {optional: true }),
+    query(':enter', stagger(100, [
+      animate('1s', style({opacity: 1}))
+    ]),  {optional: true }),
+    query(':leave', style({ opacity: 1}),  {optional: true }),
+    query(':leave', stagger(100, [
+      animate('1s', style({opacity: 0}))
+    ]),  {optional: true })
+  ])
+])
+
+```
 
