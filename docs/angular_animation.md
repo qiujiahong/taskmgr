@@ -60,4 +60,20 @@ export class AppComponent {
 
 
 
+## 补充说明
 
+* 常用的动画效果有，匀速变化、cubic-bezier、和关键帧（keyframe）
+* cubic-bezier 有如下2个网站能够帮我们实现，如``animate('0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95)')``
+  * https://easings.net/zh-cn  常用渐变
+  * http://cubic-bezier.com/
+* 关键帧（keyframe）定义动画路径上的关键帧语法如下：
+
+```typescript
+animate(5s, keyframes([
+  style({transform: 'translateY(100%)'}),
+  style({transform: 'translateY(90%)'}),
+  style({transform: 'translateY(80%)'}),
+  style({transform: 'translateY(20%)'}),
+  style({transform: 'translateY(0%)'}),
+]))
+```
