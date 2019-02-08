@@ -3,7 +3,7 @@
 
   <div mat-dialog-content>
     <mat-select placeholder="请选择目标列表">
-      <mat-option *ngFor="let list of lists">{{list.name}}</mat-option>
+      <mat-option *ngFor="let list of lists" [value]="list" >{{list.name}}</mat-option>
     </mat-select>
   </div>
 
