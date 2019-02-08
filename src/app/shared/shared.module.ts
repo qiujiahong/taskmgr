@@ -16,11 +16,12 @@ import {
   MatCheckboxModule,
   MatTooltipModule, MatRadioModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule
 } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 // import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
-  declarations: [],
+  declarations: [ConfirmDialogComponent],
   imports: [
     CommonModule,
     MatCardModule,

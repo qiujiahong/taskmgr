@@ -11,6 +11,8 @@
 * ng g c header -- 创建一个header的组件
 * ng g c core/header -- 在core下面创建要给header的组件
 * ng g c core/header --spec=false -- 在core下面创建要给header的组件,不使用测试
+* ng g c shared/confirm-dialog -it -is  -- 创建组件，并且使用内联模版
+
 
 
 ## 配置
