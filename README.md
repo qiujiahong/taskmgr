@@ -13,6 +13,7 @@
 * [material menu](docs/material_menu.md)
 * [material Datepicker](docs/material_date_picker.md)
 * [angular动画](docs/angular_animation.md)
+* [angular指令](docs/angular_directive.md)
 
 
 
@@ -25,3 +26,6 @@
 * 自动化测试
 * 总结回顾
 
+
+
+4-3
